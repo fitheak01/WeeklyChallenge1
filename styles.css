@@ -278,6 +278,10 @@ input[type="checkbox"]:checked + label span{
   .page-header .page-link img{
     width: 100%;
   }
+
+  .page-footer{
+    margin-bottom: 10px;
+  }
 }
 
 @media screen and (max-width: 400px){
