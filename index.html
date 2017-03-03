@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Bartłomiej Pacel">
+    <meta name="viewport" content="width=device-width">
+    <title> User Forms</title>
+    <link href="./styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700&amp;subset=latin-ext" rel="stylesheet">
+  </head>
+  <body>
+    <header class="page-header">
+      <h1 class="hidden">Masterlab creative</h1>
+      <a href="#" class="page-link">
+        <img src="./img/logo_top.png" alt="Masterlab creative logo">
+      </a>
+    </header>
+    <main class="page-content">
+      <div class="page-column">
+        <div class="form-box">
+          <header class="form-header">
+            <h2>Register Form</h2>
+          </header>
+          <form class="form-content">
+            <input class="username" type="text" placeholder="Username" required>
+            <input class="password" type="password" placeholder="Password" required>
+            <input class="password" type="password" placeholder="Confirm Password" required>
+            <input class="mail" type="email" placeholder="Email" required>
+            <select class="location" name="location">
+              <option value="0">Your location</option>
+              <option value="1">Warsaw</option>
+              <option value="2">London</option>
+              <option value="3">New York</option>
+              <option value="4">Beijing</option>
+              <option value="5">Oslo</option>
+            </select>
+            <input type="checkbox" id="terms">
+            <label class="terms-text" for="terms">
+              <span></span>
+              I have read and accept the terms of use.
+            </label>
+            <input class="btn-submit" type="submit" value="Sign up">
+          </form>
+        </div>
+        <div class="form-box">
+          <header class="form-header">
+            <h2>Send Email</h2>
+          </header>
+          <form class="form-content">
+            <input class="username" type="text" placeholder="Your name" required>
+            <input class="mail" type="email" placeholder="Your email" required>
+            <textarea class="mail-message" placeholder="Type your message ..." required></textarea>
+            <input type="checkbox" id="copy-mail">
+            <label class="copy-mail-text" for="copy-mail">
+              <span></span>
+              Send a copy to my Email
+            </label>
+            <input class="btn-submit" type="submit" value="Send Email">
+          </form>
+        </div>
+    </div>
+    <div class="page-column">
+      <div class="form-box">
+        <header class="form-header">
+          <h2>Sign In Form</h2>
+        </header>
+        <form class="form-content">
+          <div class="sign-in-content">
+            <input class="username" type="text" placeholder="Username" required>
+            <input class="mail" type="email" placeholder="Email" required>
+            <input type="checkbox" id="remember-me">
+            <label class="remember-text" for="remember-me">
+              <span></span>
+              Remember me
+            </label>
+            <input type="submit" class="btn-submit btn-remember sign-in" value="Sign in">
+        </div>
+        </form>
+      </div>
+      <div class="form-box">
+        <header class="form-header">
+          <h2>Recover Form</h2>
+        </header>
+        <form class="form-content">
+          <div class="recover-content">
+            <input class="mail" type="email" placeholder="Enter your email" required>
+            <input class="phone" type="tel" placeholder="Enter your phone" required>
+            <input class="btn-submit send" type="submit" value="Send">
+            <button class="btn-submit btn-disabled" type="button" disabled="disabled">Done</button>
+          </div>
+        </form>
+      </div>
+      <div class="form-box">
+        <header class="form-header">
+          <h2>Subsribe Form</h2>
+        </header>
+        <form class="form-content">
+          <div class="subscribe-content">
+            <input class="mail" type="email" placeholder="Enter your email" required>
+            <input class="btn-submit subscribe" type="submit" value="Subscribe">
+            <button class="btn-submit btn-cancel" type="button">No, Thanks</button>
+          </div>
+        </form>
+      </div>
+      <footer class="page-footer">
+        <img src="./img/logo_bottom.png" alt="Masterlab creative logo">
+      </footer>
+    </div>
+
+    </main>
+  </body>
+</html>
